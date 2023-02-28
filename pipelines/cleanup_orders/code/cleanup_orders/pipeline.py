@@ -21,10 +21,7 @@ def main():
     Utils.initializeFromArgs(spark, parse_args())
     spark.conf.set("prophecy.metadata.pipeline.uri", "pipelines/cleanup_orders")
     
-    MetricsCollector.start(
-        spark = spark,
-        pipelineId = spark.conf.get("prophecy.project.id") + "/" + "pipelines/cleanup_orders"
-    )
+    MetricsCollector.start(spark = spark, pipelineId = "pipelines/cleanup_orders")
     pipeline(spark)
     MetricsCollector.end(spark)
 

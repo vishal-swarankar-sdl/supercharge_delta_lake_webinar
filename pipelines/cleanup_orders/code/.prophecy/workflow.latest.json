@@ -2,7 +2,7 @@
   "metainfo" : {
     "id" : "1",
     "language" : "python",
-    "fabricId" : "1034",
+    "fabricId" : "199",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -18,9 +18,15 @@
         "type" : "record",
         "fields" : [ ]
       },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
       "fabrics" : { },
       "instances" : { },
-      "selected" : "default"
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
     },
     "sparkConf" : [ ],
     "hadoopConf" : [ ],
@@ -62,7 +68,8 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "R4dR44ma6oCTNlyuxNGM_$$d3kTKys_5VisMr8t1nbN-",
-          "slug" : "out"
+          "slug" : "out",
+          "isStreaming" : false
         } ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : false
@@ -87,7 +94,8 @@
       "ports" : {
         "inputs" : [ {
           "id" : "cfq3cHOn0igOrnHCdkTR7$$fAbaiADwaHpJHxC5hJgQY",
-          "slug" : "in0"
+          "slug" : "in0",
+          "isStreaming" : false
         } ],
         "outputs" : [ ],
         "selectedInputFields" : [ ],

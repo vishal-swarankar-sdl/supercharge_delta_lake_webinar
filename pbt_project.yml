@@ -70,9 +70,9 @@ pipelines:
     createdAt: '2022-09-29 01:31:06'
     datasets:
       inputs:
-      - 3436/datasets/bronze_orders
+      - datasets/bronze_orders
       outputs:
-      - 3436/datasets/silver_orders
+      - datasets/silver_orders
     dependencies: {}
   pipelines/demo_day:
     name: demo_day
